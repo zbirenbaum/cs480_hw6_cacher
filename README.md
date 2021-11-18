@@ -5,8 +5,8 @@ As this is the case, unless you utilize methods or classes from spacy in your im
 If you do use spacy elsewhere, feel free to disregard this
 
 ## 1: Download word_cacher.py
- 1: Navigate to the directory which contains your HW6 in a terminal
- 2: Run the following code in your shell
+1: Navigate to the directory which contains your HW6 in a terminal
+2: Run the following code in your shell
 ```
 wget https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_cacher.py
 ```
