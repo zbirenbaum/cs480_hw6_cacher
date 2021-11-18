@@ -1,7 +1,7 @@
 # How To Use
 ## Optional:
 Importing Spacy can cause >1 second delays between runs as it initializes CUDA. I am not sure if this is true on all systems but it is for mine.
-As this is the case, unless you utilize methods or classes from spacy in your implementation OUTSIDE of importing the model which is done here, I strongly recommend taking out your spacy import statement at the top of your code. The file contained here imports spacy only when creating the cache, not loading it, resulting in a >50% speedup. (1.4 second full run vs .6 second full run)
+As this is the case, unless you utilize methods or classes from spacy in your implementation OUTSIDE of importing the model which is done here, I strongly recommend taking out your spacy import statement at the top of your code. The file contained here imports spacy only when creating the cache, not loading it, resulting in a >50% speedup. (1.4 second full run (with caching) vs .6 second full run)
 If you do use spacy elsewhere, feel free to disregard this
 
 ## 1: Download w_loader.py
