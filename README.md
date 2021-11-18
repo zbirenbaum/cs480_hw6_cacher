@@ -10,7 +10,7 @@ If you do use spacy elsewhere, feel free to disregard this
 ```
 curl -o word_cacher.py https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_cacher.py
 ```
-### Alternatively, skip the cd step and just run it with this format
+### Alternatively, skip the cd step and just run curl with this format
 ```
 curl -o /path/to/hw6_dir/word_cacher.py https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_cacher.py
 ```
