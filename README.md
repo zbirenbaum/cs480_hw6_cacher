@@ -1,4 +1,4 @@
-#How To Use
+# How To Use
 Download w_loader.py and place this code somewhere in your hw6.py
 ```
 def get_W():
