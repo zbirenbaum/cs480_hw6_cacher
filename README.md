@@ -5,14 +5,14 @@ As this is the case, unless you utilize methods or classes from spacy in your im
 If you do use spacy elsewhere, feel free to disregard this
 
 ## 1: Download w_loader.py
-> 1: Navigate to the directory which contains your HW6 in a terminal
-> 2: Run the following code in your shell
+ 1: Navigate to the directory which contains your HW6 in a terminal
+ 2: Run the following code in your shell
 ```
 wget https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_loader.py
 ```
 
 ## 2: Integrate in your code
-> 1: Place this code somewhere in your hw6.py
+ 1: Place this code somewhere in your hw6.py
 ```
 def get_W():
     from words import build_W, word_loader, word_writer
@@ -23,7 +23,7 @@ def get_W():
         word_writer(W)
     return W
 ```   
-> 2: The first time the code runs it will likely take a very long time and you will not notice any change. Once it runs once, the cache will be generated, and all subsequent runs you can enjoy your sub second runtimes.
+ 2: The first time the code runs it will likely take a very long time and you will not notice any change. Once it runs once, the cache will be generated, and all subsequent runs you can enjoy your sub second runtimes.
 
 ## Before & After
 <img src="https://github.com/zbirenbaum/cs480_hw6_cacher/blob/main/comparison.png">
