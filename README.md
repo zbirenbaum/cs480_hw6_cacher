@@ -6,9 +6,7 @@ If you do use spacy elsewhere, feel free to disregard this
 
 ## 1: Download word_cacher.py
 
-### 1. cd to the directory which contains your HW6 in a terminal (or powershell for Windows)
-
-### 2. Run the following code in your shell
+### cd to the directory which contains your HW6 in a terminal (or powershell for Windows) and then run the following code from there in your shell:
 ```
 curl -o word_cacher.py https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_cacher.py
 ```
