@@ -1,5 +1,18 @@
 # How To Use
-Download w_loader.py and place this code somewhere in your hw6.py
+## Optional:
+Importing Spacy can cause >1 second delays between runs as it initializes CUDA. I am not sure if this is true on all systems but it is for mine.
+As this is the case, unless you utilize methods or classes from spacy in your implementation OUTSIDE of importing the model which is done here, I strongly recommend taking out your spacy import statement at the top of your code. The file contained here imports spacy only when creating the cache, not loading it, resulting in a >50% speedup. (1.4 second load vs .6 second load)
+If you do use spacy elsewhere, feel free to disregard this
+
+## 1: Download w_loader.py
+> 1: Navigate to the directory which contains your HW6 in a terminal
+> 2: Run the following code in your shell
+```
+wget https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_loader.py
+```
+
+## 2: Integrate in your code
+> 1: Place this code somewhere in your hw6.py
 ```
 def get_W():
     from words import build_W, word_loader, word_writer
@@ -10,3 +23,4 @@ def get_W():
         word_writer(W)
     return W
 ```   
+> 2: The first time the code runs it will likely take a very long time and you will not notice any change. Once it runs once, the cache will be generated, and all subsequent runs you can enjoy your sub second runtimes.
