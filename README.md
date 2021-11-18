@@ -24,3 +24,6 @@ def get_W():
     return W
 ```   
 > 2: The first time the code runs it will likely take a very long time and you will not notice any change. Once it runs once, the cache will be generated, and all subsequent runs you can enjoy your sub second runtimes.
+
+## Before & After
+<img src="https://github.com/zbirenbaum/cs480_hw6_cacher/blob/main/comparison.png">
