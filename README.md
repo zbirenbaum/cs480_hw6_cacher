@@ -8,14 +8,14 @@ If you do use spacy elsewhere, feel free to disregard this
  1: Navigate to the directory which contains your HW6 in a terminal
  2: Run the following code in your shell
 ```
-wget https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_loader.py
+wget https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_cacher.py
 ```
 
 ## 2: Integrate in your code
  1: Place this code somewhere in your hw6.py
 ```
 def get_W():
-    from word_loader import build_W, word_loader, word_writer
+    from word_cacher import build_W, word_loader, word_writer
     try:
         W = word_loader()
     except: 
