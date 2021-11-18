@@ -12,7 +12,21 @@ wget https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_cac
 ```
 
 ## 2: Integrate in your code
- 1: Place this code somewhere in your hw6.py
+
+### 1: Delete the Following Code 
+```
+nlp = spacy.load("en_core_web_lg")
+W = []
+words = []
+strings = set([w.lower().strip() for w in nlp.vocab.strings])
+for word in strings:
+  vector = nlp.vocab[word].vector
+  if np.fabs(vector).sum() > 0:
+    words.append(word)
+    W.append(vector)
+ 1: Place this code somewhere in your hw6.py (replacing the code from moodle to load the model from spacy and subsequently create W)
+```
+### 2: Replace the Deleted Code with the Following:
 ```
 def get_W():
     from word_cacher import build_W, word_loader, word_writer
@@ -22,8 +36,9 @@ def get_W():
         W = build_W()
         word_writer(W)
     return W
+W=get_W()
 ```   
- 2: The first time the code runs it will likely take a very long time and you will not notice any change. Once it runs once, the cache will be generated, and all subsequent runs you can enjoy your sub second runtimes.
+The first time the code runs it will likely take a very long time and you will not notice any change. Once it runs once, the cache will be generated, and all subsequent runs you can enjoy your sub second runtimes.
 
 ## Before & After
 <img src="https://github.com/zbirenbaum/cs480_hw6_cacher/blob/main/comparison.png">
