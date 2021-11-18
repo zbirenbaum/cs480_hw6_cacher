@@ -9,7 +9,7 @@ If you do use spacy elsewhere, feel free to disregard this
 
 2. Run the code under the header for your OS in your shell
 
-### OSX/LINUX/WSL: 
+### OSX/Linux/WSL: 
 ```
 wget https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_cacher.py
 ```
