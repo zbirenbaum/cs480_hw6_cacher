@@ -31,15 +31,17 @@ for word in strings:
 ```
 ### 2: Replace the Deleted Code with the Following:
 ```
-def get_W():
+
+def get_words():
     from word_cacher import build_W, word_loader, word_writer
     try:
-        W = word_loader()
+        words = word_loader("words.dat")
+        W = word_loader("W.dat")
     except: 
-        W = build_W()
-        word_writer(W)
-    return W
-W=get_W()
+        W, words = build_W()
+        word_writer(words, model="words.dat")
+        word_writer(W, model="W.dat")
+    return W, words 
 ```   
 The first time the code runs it will likely take a very long time and you will not notice any change. Once it runs once, the cache will be generated, and all subsequent runs you can enjoy your sub second runtimes.
 
