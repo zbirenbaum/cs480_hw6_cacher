@@ -24,7 +24,6 @@ for word in strings:
   if np.fabs(vector).sum() > 0:
     words.append(word)
     W.append(vector)
- 1: Place this code somewhere in your hw6.py (replacing the code from moodle to load the model from spacy and subsequently create W)
 ```
 ### 2: Replace the Deleted Code with the Following:
 ```
