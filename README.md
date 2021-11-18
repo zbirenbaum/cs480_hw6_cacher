@@ -37,11 +37,12 @@ def get_words():
     try:
         words = word_loader("words.dat")
         W = word_loader("W.dat")
+        nlp = spacy.load("en_core_web_lg")
     except: 
-        W, words = build_W()
+        W, words, nlp = build_W()
         word_writer(words, model="words.dat")
         word_writer(W, model="W.dat")
-    return W, words 
+    return W, words, nlp
 ```   
 The first time the code runs it will likely take a very long time and you will not notice any change. Once it runs once, the cache will be generated, and all subsequent runs you can enjoy your sub second runtimes.
 

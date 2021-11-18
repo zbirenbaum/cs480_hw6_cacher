@@ -17,7 +17,7 @@ def build_W(model="lg"):
         if np.fabs(vector).sum() > 0: #type: ignore
             words.append(word)
             W.append(vector)
-    return W, words
+    return W, words, nlp
 
 def word_loader(model="lg", cachedir="./cache/"):
     cache = cachedir+model
