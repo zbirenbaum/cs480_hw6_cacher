@@ -15,7 +15,7 @@ wget https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_loa
  1: Place this code somewhere in your hw6.py
 ```
 def get_W():
-    from words import build_W, word_loader, word_writer
+    from word_loader import build_W, word_loader, word_writer
     try:
         W = word_loader()
     except: 
