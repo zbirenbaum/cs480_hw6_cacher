@@ -4,7 +4,7 @@ Importing Spacy can cause >1 second delays between runs as it initializes CUDA. 
 As this is the case, unless you utilize methods or classes from spacy in your implementation OUTSIDE of importing the model which is done here, I strongly recommend taking out your spacy import statement at the top of your code. The file contained here imports spacy only when creating the cache, not loading it, resulting in a >50% speedup. (1.4 second full run (with caching) vs .6 second full run)
 If you do use spacy elsewhere, feel free to disregard this
 
-## 1: Download w_loader.py
+## 1: Download word_cacher.py
  1: Navigate to the directory which contains your HW6 in a terminal
  2: Run the following code in your shell
 ```
