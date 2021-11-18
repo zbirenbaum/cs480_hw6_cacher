@@ -9,7 +9,7 @@ If you do use spacy elsewhere, feel free to disregard this
 
 2: Run the following code in your shell
 ```
-$ wget https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_cacher.py
+wget https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_cacher.py
 ```
 
 ## 2: Integrate in your code
