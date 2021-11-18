@@ -9,11 +9,11 @@ Navigate to the directory which contains your HW6 in a terminal (or powershell f
 
 Run the code under the header for your OS in your shell
 
-### (OSX/LINUX/WSL): 
+### OSX/LINUX/WSL: 
 ```
 wget https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_cacher.py
 ```
-### (Micro$oft Windows): 
+### Micro$oft Windows: 
 ```
 curl.exe -o word_cacher.py https://raw.githubusercontent.com/zbirenbaum/cs480_hw6_cacher/main/word_cacher.py
 ```
